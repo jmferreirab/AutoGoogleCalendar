@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "autogooglecalendar"
+version = "0.1.0"
+description = ""
+authors = ["MFerreira <jmferreirab@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^1.0.0"
+google-api-python-client = "^2.86.0"
+pyinstaller = "^5.10.1"
+
+[tool.poetry.scripts]
+my_package_poetrcli = 'my_package.console:run'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
